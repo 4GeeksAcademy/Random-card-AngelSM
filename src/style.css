@@ -1,1 +1,52 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.card {
+  background-color: white;
+  width: 480px;
+  height: 720px;
+  border-radius: 10px;
+}
+
+.cardHeader {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  font-size: 100px;
+  padding-left: 5%;
+}
+.cardBody {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 400px;
+  margin: auto;
+}
+.cardFooter {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  font-size: 100px;
+  padding-left: 5%;
+  transform: rotate(180deg);
+  /* a parte de ponerla visualmente bonita le pregunté a CHatGp que maneras había de girar el .cardFooter pq en el ejemplo se nos muestra que esta como boca abajo y con el transform es como mejor me quedo despues de probar varios métodos (lo rote 180 grados)  */
+}
